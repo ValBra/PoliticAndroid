@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="brable.polit">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Splash1"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SplashScreen"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".MainActivity"/>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Apropos"
+            android:label="A propos"/>
+        <activity
+            android:name=".Sommaire"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".B11"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Politic1"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".B12"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Politic2"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".B13"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Politic3"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".B14"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Politic4"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".B15"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Politic5"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".B16"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Politic6"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".B17"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Politic7"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".B18"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Politic8"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Credits"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+
+    </application>
+
+</manifest>

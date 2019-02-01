@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:id="@+id/flipp">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView88"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/photo" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/presentation"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prenom"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nom"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/age"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/passion"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/d_buter_la_partie"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="158dp"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/calendrier_vacances" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/c_est_les_vacances"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="@string/je_reste_chez_moi"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="@string/je_pars_aux_etats_unis_pour_m_inspirer_de_leur_mod_le_lectoral"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="158dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/question" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/que_faites_vous"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="@string/grosse_f_te"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:textSize="20sp"
+        android:text="@string/grosse_f_te_avec_alcool" />
+
+    <Button
+        android:id="@+id/buttonr3"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:textSize="20sp"
+        android:text="@string/week_end_dans_les_vosges" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="158dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/question" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fixez_vous_un_prix_d_entr_e"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_margin="5dp"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:text="@string/oui"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:textSize="20sp"
+        android:text="@string/non" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/question" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/quel_est_votre_prix_d_entr_e"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="@string/_2"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:textSize="20sp"
+            android:text="@string/une_promesse_de_vote" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:textSize="20sp"
+            android:text="@string/un_dm_de_maths" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/rentre"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/votre_popularit_augmente_c_est_la_rentr_e_que_faites_vous"
+            android:gravity="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:text="@string/je_me_m_le_mes_ploucs_de_camarades"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:textSize="20sp"
+            android:text="@string/je_s_che_les_cours_la_meilleure_cole_c_est_celle_de_la_vraie_vie"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll7"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/suppleant" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/en_vue_de_l_lection_des_d_l_gu_s_vous_devez_choisir_votre_suppl_ant"
+            android:gravity="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="5dp"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="@string/choisir_l_intello"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:textSize="20sp"
+            android:text="@string/choisir_la_brute" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll8"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/ambulance" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/suite_un_myst_rieux_accident_en_cours_de_sport_le_concurrent_principal_est_hors_course"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="@string/continuer"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll9"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="158dp"
+        android:layout_margin="5dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/debat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dernier_d_bat_contre_votre_dernier_concurrent_jean_mickey_quinconce_que_dites_vous"
+        android:gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/button16"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="@string/t_as_un_pr_nom_nul"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="20sp"
+        android:text="@string/tes_lunettes_sont_moches"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll10"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/hollande" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/jean_mickey_quitte_la_salle_en_pleurs_et_vous_tes_lu_f_licitations_monsieur_le_d_l_gu"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="@string/continuer"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+
+</ViewFlipper>
+    </ScrollView>

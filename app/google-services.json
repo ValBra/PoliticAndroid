@@ -1,0 +1,50 @@
+{
+  "project_info": {
+    "project_number": "331890600503",
+    "firebase_url": "https://politic-650e5.firebaseio.com",
+    "project_id": "politic-650e5",
+    "storage_bucket": "politic-650e5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331890600503:android:2cf09ea427a5d010",
+        "android_client_info": {
+          "package_name": "brable.polit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "331890600503-as7vgrriu0ak732a51lst77kq41ktfva.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "brable.polit",
+            "certificate_hash": "9db2685c275c139f27004766111e99e60bea06d1"
+          }
+        },
+        {
+          "client_id": "331890600503-mirjfakdc5hbb5o55pkvfrjq2jk1mqp8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWNO4XrBwR-DIHD9Q_N-Fb8j5jg3TMIgQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

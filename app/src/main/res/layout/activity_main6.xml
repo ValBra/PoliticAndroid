@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent"
+    android:id="@+id/flipp">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/system" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maintenant que vous êtes le maître du système solaire, que faites-vous?"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Coloniser Jupiter"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Coloniser Pluton"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/pluton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous colonisez Pluton"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Construire un vaisseau plus rapide que la lumière"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Ne rien faire"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/pluton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous entamez une quête spirituelle basée sur la méditation.
+Vous réalisez vite que c'est chiant et vous étudiez pour passer le temps."
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Construire un vaisseau plus rapide que la lumière"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Taxer les habitants"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll4"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/pluton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous commencez à méchamment vous ennuyer sur votre caillou."
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Conquérir d'autres systèmes solaires"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:text="Militariser Pluton"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll10"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/pluton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous disposez maintenant d'une base avancée pour vous aider dans vos futures conquêtes."
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button15"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Conquérir d'autres systèmes solaires"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button16"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Partir en vacances"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll5"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/ovni" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous colonisez de nombreuses planètes habitées et vous ne savez pas quoi faires des populations qui s'y trouvent"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Les exterminer"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Les réduire en esclavage"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll6"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/mine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cette main d'oeuvre vous permet d'entrer en possession de nouvelles ressources vous permettant d'améliorer votre technologie."
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Continuer les conquêtes"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="S'arrêter"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll7"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/iss" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vous vous arrêtez dans une station spatiale pour reprendre du carburant"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button13"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Continuer"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll9"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/planete" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Il ne vous reste qu'une planète à conquérir"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button17"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Conquérir la dernière planète"
+            android:textSize="20sp"/>
+
+        <Button
+            android:id="@+id/button18"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Aller chercher des renforts"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll8"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:srcCompat="@drawable/hollande" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Félicitations, vous êtes le maître de la Voie Lactée !"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:text="Continuer"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+</ViewFlipper>
+    </ScrollView>

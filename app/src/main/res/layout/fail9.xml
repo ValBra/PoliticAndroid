@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:scrollbars = "horizontal"
+    android:scrollbarStyle="insideInset"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll17"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="158dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/passeport" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Face à la complexité des démarches administratives pour faire un passeport, vous préférez vous jeter dans la rivière avec une pierre accrochée au pied"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/button65"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Rejouer" />
+
+        <Button
+            android:id="@+id/button66"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Retour au menu" />
+
+    </LinearLayout></ScrollView>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="match_parent"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_height="wrap_content"
+        android:text="Crédits"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Scénario"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valère Brablé"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+        android:id="@+id/textView29"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Conception"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valère Brablé"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"/>
+
+        <TextView
+        android:id="@+id/textView30"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Développement"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valère Brablé"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"/>
+
+        <TextView
+        android:id="@+id/textView31"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Graphismes"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valère Brablé"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+        android:id="@+id/textView32"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="center"
+        android:text="Sons et musique"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FemtiFire"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Two Steps From Hell"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"/>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Vous êtes encore là ?"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Images"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tashima Charbonnier"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harry Lunts"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vartan Arzoumanian"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gage Skidmore"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Greg Cookie"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Martin Wyss"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tobias 4242"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Julien Dodeler"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Steven Jambot"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Yves Brette"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Valère Brablé"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+</ScrollView>

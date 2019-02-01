@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true"
+    android:scrollbars = "horizontal"
+    android:scrollbarStyle="insideInset"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll15"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/foule"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Face à ce prix plus qu'excessif, vos invités se révoltent. Le mouvement prend une telle ampleur que la 3è Guerre Mondiale est déclarée un mois plus tard"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:id="@+id/button59"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Rejouer" />
+
+    <Button
+        android:id="@+id/button60"
+        android:layout_gravity="center"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Retour au menu" />
+
+</LinearLayout></ScrollView>
