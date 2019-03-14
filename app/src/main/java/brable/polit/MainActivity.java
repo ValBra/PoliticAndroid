@@ -8,6 +8,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -61,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton imb = (ImageButton) findViewById(R.id.imageButton);
+        ImageView imb = (ImageView) findViewById(R.id.imageButton);
         imb.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v){
                 Uri url = Uri.parse("https://www.facebook.com/BrableyApps/");

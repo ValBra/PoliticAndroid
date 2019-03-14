@@ -61,7 +61,7 @@ public class Sommaire extends AppCompatActivity {
 
         bouton1.setOnClickListener(new View.OnClickListener(){
             public void onClick (View v) {
-                Intent intent2 = new Intent(Sommaire.this, B11.class);
+                Intent intent2 = new Intent(Sommaire.this, Politic1.class);
                 startActivity(intent2);
                 finish();
             }
@@ -71,7 +71,7 @@ public class Sommaire extends AppCompatActivity {
             bouton2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
 
-                    Intent intent2 = new Intent(Sommaire.this, B12.class);
+                    Intent intent2 = new Intent(Sommaire.this, Politic2.class);
                     startActivity(intent2);
                     finish();
                 }

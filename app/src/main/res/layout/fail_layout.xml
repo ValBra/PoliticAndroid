@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll18"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <ImageView
+            android:id="@+id/image_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="@string/image_description"/>
+
+        <TextView
+            android:id="@+id/text_fail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:fontFamily="sans-serif-smallcaps"
+            android:layout_margin="20dp"/>
+
+        <Button
+            android:id="@+id/button_rejouer"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/rejouer" />
+
+        <Button
+            android:id="@+id/button_menu"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="@string/retour_au_menu" />
+
+    </LinearLayout>
+
+</ScrollView>

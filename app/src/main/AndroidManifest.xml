@@ -36,13 +36,7 @@
             android:name=".Sommaire"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".B11"
-            android:screenOrientation="portrait"/>
-        <activity
             android:name=".Politic1"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".B12"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".Politic2"

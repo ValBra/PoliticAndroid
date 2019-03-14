@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:ads="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:id="@+id/ll1">
@@ -12,56 +13,56 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:gravity="center"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textStyle="bold"
-        android:text="Chapitres" />
+        android:text="@string/chapitres" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1 - Jean-Kévin, 15 ans" />
+        android:text="@string/chap1" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2 - La revanche de Jean-Mickey" />
+        android:text="@string/chap2" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="3 - Le cancre de l'assemblée" />
+        android:text="@string/chap3" />
 
     <Button
         android:id="@+id/button4"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="4 - Comme un air de guerre mondiale" />
+        android:text="@string/chap4" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="5 - Un petit pas pour l'Homme" />
+        android:text="@string/chap5" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="6 - Randonnée céleste" />
+        android:text="@string/chap6" />
 
     <Button
         android:id="@+id/button7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="7 - Quand l'aléatoire s'en mêle" />
+        android:text="@string/chap7" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="8 - L'apocalypse inter-universelle" />
+        android:text="@string/chap8" />
 
 </LinearLayout>

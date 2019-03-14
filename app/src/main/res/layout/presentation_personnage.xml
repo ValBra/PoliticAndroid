@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_margin="20dp"
+        app:srcCompat="@drawable/photo"
+        android:contentDescription="@string/image_description"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/presentation"
+        app:fontFamily="sans-serif-smallcaps"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/prenom"
+        app:fontFamily="sans-serif-smallcaps"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/nom"
+        app:fontFamily="sans-serif-smallcaps"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/age"
+        app:fontFamily="sans-serif-smallcaps"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/passion"
+        app:fontFamily="sans-serif-smallcaps"
+        android:layout_marginBottom="20dp"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/button_demarrer"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="@string/d_buter_la_partie"/>
+
+</LinearLayout>
