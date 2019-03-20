@@ -82,7 +82,7 @@ public class Sommaire extends AppCompatActivity {
             bouton3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
 
-                    Intent intent2 = new Intent(Sommaire.this, B13.class);
+                    Intent intent2 = new Intent(Sommaire.this, Politic3.class);
                     startActivity(intent2);
                     finish();
                 }

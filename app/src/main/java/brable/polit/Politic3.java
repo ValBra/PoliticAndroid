@@ -7,13 +7,17 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ViewFlipper;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 /**
  * Created by BRABLE on 21/04/2017.
  */
 
 public class Politic3 extends AppCompatActivity {
+    ImageView image, imageFail;
+    TextView textTitle,text, textFail;
+    Button button1,button2,button3, buttonRejouer,buttonMenu;
     MediaPlayer bouton;
     MediaPlayer pol3;
     MediaPlayer applause;
@@ -26,7 +30,6 @@ public class Politic3 extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         pref3 = getBaseContext().getSharedPreferences(PREFS3,MODE_PRIVATE);
 
         overridePendingTransition(R.transition.fadein, R.transition.fadeout);
@@ -36,811 +39,680 @@ public class Politic3 extends AppCompatActivity {
         table = MediaPlayer.create(this,R.raw.table);
         boom = MediaPlayer.create(this,R.raw.boom);
         end = MediaPlayer.create(this,R.raw.endofthegame);
-        setContentView(R.layout.activity_main3);
         pol3.setLooping(true);
 
-        final ViewFlipper viewFlipper = (ViewFlipper) findViewById(R.id.flipp);
+        setContentView(R.layout.question_layout);
+        image = (ImageView) findViewById(R.id.image_question);
+        textTitle = (TextView) findViewById(R.id.textTitle);
+        text = (TextView) findViewById(R.id.text_question);
+        button1 = (Button) findViewById(R.id.button1);
+        button2 = (Button) findViewById(R.id.button2);
+        button3 = (Button) findViewById(R.id.button3);
 
-        Button bouton1 = (Button) findViewById(R.id.button1);
-        Button bouton2 = (Button) findViewById(R.id.button2);
-        Button bouton3 = (Button) findViewById(R.id.button3);
-        Button bouton4 = (Button) findViewById(R.id.button4);
-        Button bouton5 = (Button) findViewById(R.id.button5);
-        Button bouton6 = (Button) findViewById(R.id.button6);
-        Button bouton7 = (Button) findViewById(R.id.button7);
-        Button bouton8 = (Button) findViewById(R.id.button8);
-        Button bouton9 = (Button) findViewById(R.id.button9);
-        Button bouton10 = (Button) findViewById(R.id.button10);
-        Button bouton11 = (Button) findViewById(R.id.button11);
-        Button bouton12 = (Button) findViewById(R.id.button12);
-        Button bouton13 = (Button) findViewById(R.id.button13);
-        Button bouton14 = (Button) findViewById(R.id.button14);
-        Button bouton15 = (Button) findViewById(R.id.button15);
-        Button bouton16 = (Button) findViewById(R.id.button16);
-        Button bouton17 = (Button) findViewById(R.id.button17);
-        Button bouton18 = (Button) findViewById(R.id.button18);
-        Button bouton19 = (Button) findViewById(R.id.button19);
-        Button bouton20 = (Button) findViewById(R.id.button20);
-        Button bouton21 = (Button) findViewById(R.id.button21);
-        Button bouton22 = (Button) findViewById(R.id.button22);
-        Button bouton23 = (Button) findViewById(R.id.button23);
-        Button bouton24 = (Button) findViewById(R.id.button24);
-        Button bouton25 = (Button) findViewById(R.id.button25);
-        Button bouton26 = (Button) findViewById(R.id.button26);
-        Button bouton27 = (Button) findViewById(R.id.button27);
-        Button bouton28 = (Button) findViewById(R.id.button28);
-        Button bouton29 = (Button) findViewById(R.id.button29);
-        Button bouton30 = (Button) findViewById(R.id.button30);
-        Button bouton31 = (Button) findViewById(R.id.button31);
-        Button bouton32 = (Button) findViewById(R.id.button32);
-        Button bouton33 = (Button) findViewById(R.id.button33);
-        Button bouton34 = (Button) findViewById(R.id.button34);
-        Button bouton35 = (Button) findViewById(R.id.button35);
-        Button bouton36 = (Button) findViewById(R.id.button36);
-        Button bouton37 = (Button) findViewById(R.id.button37);
-        Button bouton38 = (Button) findViewById(R.id.button38);
-        Button bouton39 = (Button) findViewById(R.id.button39);
-        Button bouton40 = (Button) findViewById(R.id.button40);
+        image.setImageResource(R.drawable.ass);
+        textTitle.setText(R.string.chap3_titre);
+        button1.setText(R.string.continuer);
+        button2.setVisibility(View.GONE);
+        button3.setVisibility(View.GONE);
 
-        bouton1.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail18);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                demarrer();
             }
         });
 
-        bouton2.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+    }
+
+    public void demarrer() {
+        image.setImageResource(R.drawable.maire);
+        textTitle.setVisibility(View.GONE);
+        text.setText(R.string.nouveau_maire);
+        button1.setText(R.string.legislatives);
+        button2.setVisibility(View.VISIBLE);
+        button2.setText(R.string.reparer_egouts);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
+                success1();
             }
         });
 
-        bouton3.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail19);
+                fail18();
+            }
+        });
+    }
 
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+    public void success1() {
+        image.setImageResource(R.drawable.question);
+        text.setText(R.string.que_faites_vous);
+        button1.setText(R.string.petits_fours);
+        button2.setText(R.string.salle_des_fetes);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+                fail19();
             }
         });
 
-        bouton4.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
+                success2();
+            }
+        });
+    }
+
+    public void success2(){
+        image.setImageResource(R.drawable.salle_des_fetes);
+        text.setText(R.string.succes_reunion);
+        button1.setText(R.string.oui);
+        button2.setText(R.string.non);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+                success3();
             }
         });
 
-        bouton5.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
+                fail20();
+            }
+        });
+    }
+
+    public void success3() {
+        image.setImageResource(R.drawable.debat2);
+        text.setText(R.string.adversaire_agressif);
+        button1.setText(R.string.monopole_du_coeur);
+        button2.setText(R.string.casse_toi);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+                fail21();
             }
         });
 
-        bouton6.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail20);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                success4();
             }
         });
+    }
 
-        bouton7.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail21);
+    public void success4(){
+        applause.start();
 
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-            }
-        });
+        image.setImageResource(R.drawable.assemble);
+        text.setText(R.string.elu_depute);
+        button1.setText(R.string.grosse_loi);
+        button2.setText(R.string.grosse_bouffe);
+        button3.setVisibility(View.VISIBLE);
+        button3.setText(R.string.grosse_fete);
 
-        bouton8.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                bouton.start();
-                double rand = Math.random();
-                if(rand>=0.4){
-                    applause.start();
-                    viewFlipper.showNext();
-                }else{
-                    end.start();
-                    applause.stop();
-                    pol3.stop();
-                    setContentView(R.layout.fail37);
-
-                    Button bouton51 = (Button) findViewById(R.id.button1);
-                    Button bouton52 = (Button) findViewById(R.id.button2);
-                    bouton51.setOnClickListener(new View.OnClickListener(){
-                        public void onClick(View v) {
-                            Intent intent = new Intent(Politic3.this,Politic3.class);
-                            startActivity(intent);
-                            finish();
-                        }
-                    });
-                    bouton52.setOnClickListener(new View.OnClickListener(){
-                        public void onClick(View v) {
-                            Intent intent = new Intent(Politic3.this,MainActivity.class);
-                            startActivity(intent);
-                            finish();
-                        }
-                    });
-                }
-
-            }
-        });
-
-        bouton9.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
                 applause.stop();
-                end.start();
-                pol3.stop();
-                setContentView(R.layout.fail22);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                fail22();
             }
         });
 
-        bouton10.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
                 applause.stop();
-                end.start();
-                pol3.stop();
-                setContentView(R.layout.fail23);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                fail23();
             }
         });
 
-        bouton11.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
+                applause.stop();
+                success5();
+            }
+        });
+    }
+
+    public void success5() {
+        image.setImageResource(R.drawable.lama);
+        text.setText(R.string.lama);
+        button1.setText(R.string.continuer);
+        button2.setVisibility(View.GONE);
+        button3.setVisibility(View.GONE);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+                success6();
+            }
+        });
+    }
+
+    public void success6() {
+        image.setImageResource(R.drawable.assemble);
+        text.setText(R.string.que_faites_vous_maintenant);
+        button1.setText(R.string.grosse_loi);
+        button2.setVisibility(View.VISIBLE);
+        button2.setText(R.string.grosse_bouffe);
+        button3.setVisibility(View.VISIBLE);
+        button3.setText(R.string.grosse_fete);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+                fail24();
             }
         });
 
-        bouton12.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
+                success7();
             }
         });
 
-        bouton13.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail24);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-            }
-        });
-
-        bouton14.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                bouton.start();
-                table.start();
-                viewFlipper.showNext();
-            }
-        });
-
-        bouton15.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                bouton.start();
-                pol3.stop();
                 boom.start();
-                setContentView(R.layout.fail25);
+                fail25();
+                end.stop();
+            }
+        });
+    }
 
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        boom.stop();
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        boom.stop();
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+    public void success7() {
+        table.start();
+
+        image.setImageResource(R.drawable.banquet);
+        text.setText(R.string.cuisinier);
+        button1.setText(R.string.continuer);
+        button2.setVisibility(View.GONE);
+        button3.setVisibility(View.GONE);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+                table.stop();
+                success8();
+            }
+        });
+    }
+
+    public void success8() {
+        image.setImageResource(R.drawable.assemble);
+        text.setText(R.string.que_faites_vous_maintenant);
+        button1.setText(R.string.grosse_loi);
+        button2.setVisibility(View.VISIBLE);
+        button2.setText(R.string.grosse_bouffe);
+        button3.setVisibility(View.VISIBLE);
+        button3.setText(R.string.grosse_fete);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+                success9();
             }
         });
 
-        bouton16.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
+                fail27();
             }
         });
 
-        bouton17.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
-            }
-        });
-
-        bouton18.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail27);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-            }
-        });
-
-        bouton19.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                bouton.start();
-                pol3.stop();
                 boom.start();
-                setContentView(R.layout.fail26);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        boom.start();
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        boom.start();
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                fail26();
+                end.stop();
             }
         });
+    }
 
-        bouton20.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
-                viewFlipper.showNext();
-            }
-        });
+    public void success9() {
+        image.setImageResource(R.drawable.question);
+        text.setText(R.string.vous_etes_sur);
+        button1.setText(R.string.oui);
+        button2.setText(R.string.non);
+        button3.setVisibility(View.GONE);
 
-        bouton21.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail28);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                success10();
             }
         });
 
-        bouton22.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
+                fail28();
             }
         });
+    }
 
-        bouton23.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+    public void success10() {
+        image.setImageResource(R.drawable.question);
+        text.setText(R.string.loi_votee);
+        button1.setText(R.string.inviter_hollande);
+        button2.setText(R.string.ecrire_nouvelle_loi);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail29);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                success11();
             }
         });
 
-        bouton24.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail30);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                fail29();
             }
         });
+    }
 
-        bouton25.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+    public void success11() {
+        image.setImageResource(R.drawable.gouv);
+        text.setText(R.string.ministre_budget);
+        button1.setText(R.string.etre_exemplaire);
+        button2.setText(R.string.se_servir);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
+                fail30();
             }
         });
 
-        bouton26.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
+                success12();
             }
         });
+    }
 
-        bouton27.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+    public void success12() {
+        image.setImageResource(R.drawable.corrup);
+        text.setText(R.string.premier_ministre);
+        button1.setText(R.string.faire_semblant);
+        button2.setText(R.string.se_presenter_presidentielles);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail31);
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                success13();
             }
         });
 
-        bouton28.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
+                fail31();
             }
         });
+    }
 
-        bouton29.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+    public void success13() {
+        image.setImageResource(R.drawable.graph);
+        text.setText(R.string.fin_crise);
+        button1.setText(R.string.refaire_semblant);
+        button2.setText(R.string.se_presenter_presidentielles);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail32);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                success14();
             }
         });
 
-        bouton30.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail33);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                fail32();
             }
         });
+    }
 
-        bouton31.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+    public void success14() {
+        image.setImageResource(R.drawable.graph);
+        text.setText(R.string.puissance_mondiale);
+        button1.setText(R.string.refaire_semblant);
+        button2.setText(R.string.se_presenter_presidentielles);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
+                fail33();
             }
         });
 
-        bouton32.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail34);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                success15();
             }
         });
+    }
 
-        bouton33.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+    public void success15() {
+        image.setImageResource(R.drawable.question);
+        text.setText(R.string.pour_votre_campagne_que_faites_vous);
+        button1.setText(R.string.petits_fours);
+        button2.setText(R.string.bar_tabac);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
+                fail34();
             }
         });
 
-        bouton34.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail35);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                success16();
             }
         });
+    }
 
-        bouton35.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+    public void success16() {
+        image.setImageResource(R.drawable.cope);
+        text.setText(R.string.proximite_peuple);
+        button1.setText(R.string.allez_les_bleus);
+        button2.setText(R.string.luc_pere);
+        button3.setVisibility(View.VISIBLE);
+        button3.setText(R.string.centimes);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                double rand = Math.random();
-                if(rand>=0.33){
-                    applause.start();
-                    viewFlipper.showNext();
-                }else{
-                    pol3.stop();
-                    end.start();
-                    setContentView(R.layout.fail35);
-
-                    Button bouton51 = (Button) findViewById(R.id.button1);
-                    Button bouton52 = (Button) findViewById(R.id.button2);
-                    bouton51.setOnClickListener(new View.OnClickListener(){
-                        public void onClick(View v) {
-                            Intent intent = new Intent(Politic3.this,Politic3.class);
-                            startActivity(intent);
-                            finish();
-                        }
-                    });
-                    bouton52.setOnClickListener(new View.OnClickListener(){
-                        public void onClick(View v) {
-                            Intent intent = new Intent(Politic3.this,MainActivity.class);
-                            startActivity(intent);
-                            finish();
-                        }
-                    });
-                }
-
+                fail35();
             }
         });
 
-        bouton36.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                end.start();
-                setContentView(R.layout.fail36);
-
-                Button bouton1 = (Button) findViewById(R.id.button1);
-                Button bouton2 = (Button) findViewById(R.id.button2);
-                bouton1.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,Politic3.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
-                bouton2.setOnClickListener(new View.OnClickListener(){
-                    public void onClick(View v) {
-                        Intent intent = new Intent(Politic3.this,MainActivity.class);
-                        startActivity(intent);
-                        finish();
-                    }
-                });
+                success17();
             }
         });
 
-        bouton37.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                viewFlipper.showNext();
+                fail36();
             }
         });
+    }
 
-        bouton38.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+    public void success17() {
+        image.setImageResource(R.drawable.result3);
+        text.setText(R.string.second_tour);
+        button1.setText(R.string.continuer);
+        button2.setVisibility(View.GONE);
+        button3.setVisibility(View.GONE);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                double rand = Math.random();
-                if(rand>=0.5){
-                    applause.start();
-                    viewFlipper.showNext();
-                }else{
-                    end.start();
-                    applause.stop();
-                    setContentView(R.layout.fail79);
-
-                    Button bouton51 = (Button) findViewById(R.id.button1);
-                    Button bouton52 = (Button) findViewById(R.id.button2);
-                    bouton51.setOnClickListener(new View.OnClickListener(){
-                        public void onClick(View v) {
-                            Intent intent = new Intent(Politic3.this,Politic3.class);
-                            startActivity(intent);
-                            finish();
-                        }
-                    });
-                    bouton52.setOnClickListener(new View.OnClickListener(){
-                        public void onClick(View v) {
-                            Intent intent = new Intent(Politic3.this,MainActivity.class);
-                            startActivity(intent);
-                            finish();
-                        }
-                    });
-                }
-
+                success18();
             }
         });
+    }
 
-        bouton39.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+    public void success18() {
+        image.setImageResource(R.drawable.debatpres);
+        text.setText(R.string.debat_entre_deux_tours);
+        button1.setText(R.string.depenaliserons_cannabis);
+        button2.setVisibility(View.VISIBLE);
+        button2.setText(R.string.envahirons_allemagne);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
-                pol3.stop();
-                double rand = Math.random();
-                if(rand>=0.66){
-                    applause.start();
-                    viewFlipper.showNext();
-                }else{
-                    end.start();
-                    applause.stop();
-                    setContentView(R.layout.fail37);
-
-                    Button bouton51 = (Button) findViewById(R.id.button1);
-                    Button bouton52 = (Button) findViewById(R.id.button2);
-                    bouton51.setOnClickListener(new View.OnClickListener(){
-                        public void onClick(View v) {
-                            Intent intent = new Intent(Politic3.this,Politic3.class);
-                            startActivity(intent);
-                            finish();
-                        }
-                    });
-                    bouton52.setOnClickListener(new View.OnClickListener(){
-                        public void onClick(View v) {
-                            Intent intent = new Intent(Politic3.this,MainActivity.class);
-                            startActivity(intent);
-                            finish();
-                        }
-                    });
-                }
-
+                success19();
             }
         });
 
-        bouton40.setOnClickListener(new View.OnClickListener(){
-            public void onClick(View v){
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+                fail37();
+            }
+        });
+    }
+
+    public void success19() {
+        applause.start();
+        image.setImageResource(R.drawable.hollande);
+        text.setText(R.string.victoire_presidentielle);
+        button1.setText(R.string.continuer);
+        button2.setVisibility(View.GONE);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 bouton.start();
                 applause.stop();
                 SharedPreferences.Editor editor = pref3.edit();
                 editor.putBoolean(getString(R.string.comp3),true);
                 editor.apply();
-                Intent intent = new Intent(Politic3.this,B14.class);
+                Intent intent = new Intent(Politic3.this,Politic4.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
+
+    public void initializeFail() {
+        setContentView(R.layout.fail_layout);
+
+        pol3.stop();
+        end.start();
+
+        imageFail = (ImageView) findViewById(R.id.image_fail);
+        textFail = (TextView) findViewById(R.id.text_fail);
+        buttonRejouer = (Button) findViewById(R.id.button_rejouer);
+        buttonMenu = (Button) findViewById(R.id.button_menu);
+
+        buttonRejouer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boom.stop();
+                bouton.start();
+                Intent intent = new Intent(Politic3.this, Politic3.class);
                 startActivity(intent);
                 finish();
             }
         });
 
+        buttonMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                boom.stop();
+                bouton.start();
+                Intent intent = new Intent(Politic3.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
+
+    public void fail18() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.egouts);
+        textFail.setText(R.string.egouts_fail);
+    }
+
+    public void fail19() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.bercy);
+        textFail.setText(R.string.bercy_fail);
+    }
+
+    public void fail20() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.looser);
+        textFail.setText(R.string.absence_debat);
+    }
+
+    public void fail21() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.looser);
+        textFail.setText(R.string.style_vieillot);
+    }
+
+    public void fail22() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.looser);
+        textFail.setText(R.string.inconnu);
+    }
+
+    public void fail23() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.charcut);
+        textFail.setText(R.string.charcuterie);
+    }
+
+    public void fail24() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.assemb);
+        textFail.setText(R.string.apres_fiesta);
+    }
+
+    public void fail25() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.explo1);
+        textFail.setText(R.string.soiree_degenere);
+    }
+
+    public void fail26() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.explo2);
+        textFail.setText(R.string.soiree_degenere2);
+    }
+
+    public void fail27() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.canard);
+        textFail.setText(R.string.canard);
+    }
+
+    public void fail28() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.oppos);
+        textFail.setText(R.string.opposition);
+    }
+
+    public void fail29() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.oppos);
+        textFail.setText(R.string.post_it);
+    }
+
+    public void fail30() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.trump);
+        textFail.setText(R.string.remaniment_suivant);
+    }
+
+    public void fail31() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.looser);
+        textFail.setText(R.string.fail_parrainnages);
+    }
+
+    public void fail32() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.evasio);
+        textFail.setText(R.string.evasion_fiscale);
+    }
+
+    public void fail33() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.coupdetat);
+        textFail.setText(R.string.france_tiers_monde);
+    }
+
+    public void fail34() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.result1);
+        textFail.setText(R.string.derriere_bayrou);
+    }
+
+    public void fail35() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.result2);
+        textFail.setText(R.string.hors_sujet);
+    }
+
+    public void fail36() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.result1);
+        textFail.setText(R.string.jfcope);
+    }
+
+    public void fail37() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.looser);
+        textFail.setText(R.string.defaite_presidentielle);
     }
 
     protected void onPause(){

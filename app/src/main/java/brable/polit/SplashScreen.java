@@ -19,7 +19,7 @@ public class SplashScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         overridePendingTransition(R.transition.fadein, R.transition.fadeout);
-        splash = MediaPlayer.create(this,R.raw.splash);
+        splash = MediaPlayer.create(this,R.raw.brabley_jingle);
         setContentView(R.layout.splash);
         splash.start();
 

@@ -21,6 +21,7 @@
             app:fontFamily="sans-serif-smallcaps"
             android:layout_margin="5dp"
             android:gravity="center"
+            android:layout_gravity="center"
             android:textSize="30sp"
             android:textStyle="bold"/>
 

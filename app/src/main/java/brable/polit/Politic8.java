@@ -398,7 +398,7 @@ public class Politic8 extends AppCompatActivity {
                 }else{
                     end.start();
                     pol8.stop();
-                    setContentView(R.layout.fail37);
+                    //setContentView(R.layout.fail37);
 
                     Button bouton1 = (Button) findViewById(R.id.button1);
                     Button bouton2 = (Button) findViewById(R.id.button2);

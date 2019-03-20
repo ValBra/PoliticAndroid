@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 
 /**
@@ -217,7 +219,7 @@ public class Politic5 extends AppCompatActivity {
                     end.start();
                     applause.stop();
                     pol5.stop();
-                    setContentView(R.layout.fail32);
+                    fail32();
 
                     Button bouton51 = (Button) findViewById(R.id.button1);
                     Button bouton52 = (Button) findViewById(R.id.button2);
@@ -385,6 +387,44 @@ public class Politic5 extends AppCompatActivity {
             }
         });
 
+    }
+
+    public void initializeFail() {
+        setContentView(R.layout.fail_layout);
+
+        /*pol3.stop();
+        end.start();
+
+        imageFail = (ImageView) findViewById(R.id.image_fail);
+        textFail = (TextView) findViewById(R.id.text_fail);
+        buttonRejouer = (Button) findViewById(R.id.button_rejouer);
+        buttonMenu = (Button) findViewById(R.id.button_menu);
+
+        buttonRejouer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+                Intent intent = new Intent(Politic3.this, Politic3.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        buttonMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+                Intent intent = new Intent(Politic3.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });*/
+    }
+
+    public void fail32() {
+        initializeFail();
+        //imageFail.setImageResource(R.drawable.evasio);
+        //textFail.setText(R.string.evasion_fiscale);
     }
 
     protected void onPause(){

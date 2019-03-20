@@ -42,9 +42,6 @@
             android:name=".Politic2"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".B13"
-            android:screenOrientation="portrait"/>
-        <activity
             android:name=".Politic3"
             android:screenOrientation="portrait"/>
         <activity

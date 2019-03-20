@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:background="@android:color/white"
     android:layout_height="match_parent">
 
@@ -13,9 +15,9 @@
     <TextView
         android:id="@+id/textView28"
         android:layout_width="match_parent"
-        android:fontFamily="sans-serif-smallcaps"
+        app:fontFamily="sans-serif-smallcaps"
         android:layout_height="wrap_content"
-        android:text="Crédits"
+        android:text="@string/credits"
         android:textStyle="bold"
         android:textSize="30sp"
         android:gravity="center"
@@ -25,8 +27,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Scénario"
+        app:fontFamily="sans-serif-smallcaps"
+        android:text="@string/scenario"
         android:textSize="20sp"
         android:textStyle="bold"
         android:layout_marginTop="30dp"/>
@@ -34,8 +36,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Valère Brablé"
-            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/valere_brable"
+            app:fontFamily="sans-serif-smallcaps"
             android:textSize="20sp"
             android:gravity="center"/>
 
@@ -48,18 +50,18 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-smallcaps"
+        app:fontFamily="sans-serif-smallcaps"
         android:gravity="center"
-        android:text="Conception"
+        android:text="@string/conception"
         android:textSize="20sp"
         android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Valère Brablé"
+            android:text="@string/valere_brable"
             android:textSize="20sp"
-            android:fontFamily="sans-serif-smallcaps"
+            app:fontFamily="sans-serif-smallcaps"
             android:gravity="center"/>
 
         <TextView
@@ -72,17 +74,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Développement"
-        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/developement"
+        app:fontFamily="sans-serif-smallcaps"
         android:textSize="20sp"
         android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Valère Brablé"
+            android:text="@string/valere_brable"
             android:textSize="20sp"
-            android:fontFamily="sans-serif-smallcaps"
+            app:fontFamily="sans-serif-smallcaps"
             android:gravity="center"/>
 
         <TextView
@@ -94,17 +96,17 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-smallcaps"
+        app:fontFamily="sans-serif-smallcaps"
         android:gravity="center"
-        android:text="Graphismes"
+        android:text="@string/graphismes"
         android:textSize="20sp"
         android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Valère Brablé"
-            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/valere_brable"
+            app:fontFamily="sans-serif-smallcaps"
             android:textSize="20sp"
             android:gravity="center"/>
 
@@ -117,26 +119,26 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-smallcaps"
+        app:fontFamily="sans-serif-smallcaps"
         android:gravity="center"
-        android:text="Sons et musique"
+        android:text="@string/sons_et_musiques"
         android:textSize="20sp"
         android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="FemtiFire"
+            android:text="@string/femti_fire"
             android:textSize="20sp"
-            android:fontFamily="sans-serif-smallcaps"
+            app:fontFamily="sans-serif-smallcaps"
             android:gravity="center"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Two Steps From Hell"
+            android:text="@string/two_steps"
             android:textSize="20sp"
-            android:fontFamily="sans-serif-smallcaps"
+            app:fontFamily="sans-serif-smallcaps"
             android:gravity="center"/>
 
         <TextView
@@ -148,8 +150,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Vous êtes encore là ?"
-            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/vous_etes_encore_la"
+            app:fontFamily="sans-serif-smallcaps"
             android:textSize="20sp"
             android:textStyle="bold" />
 
@@ -162,98 +164,99 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Images"
-            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/images"
+            app:fontFamily="sans-serif-smallcaps"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tashima Charbonnier"
-            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/tashima_charbonnier"
+            app:fontFamily="sans-serif-smallcaps"
             android:textSize="20sp"
             android:gravity="center"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Harry Lunts"
+            android:text="@string/harry_lunts"
             android:textSize="20sp"
-            android:fontFamily="sans-serif-smallcaps"
+            app:fontFamily="sans-serif-smallcaps"
             android:gravity="center"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Vartan Arzoumanian"
-            android:fontFamily="sans-serif-smallcaps"
-            android:textSize="20sp"
-            android:gravity="center"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Gage Skidmore"
-            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/vartan"
+            app:fontFamily="sans-serif-smallcaps"
             android:textSize="20sp"
             android:gravity="center"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Greg Cookie"
-            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/gage_skidmore"
+            app:fontFamily="sans-serif-smallcaps"
             android:textSize="20sp"
             android:gravity="center"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Martin Wyss"
-            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/greg_cookie"
+            app:fontFamily="sans-serif-smallcaps"
             android:textSize="20sp"
             android:gravity="center"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Tobias 4242"
-            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/martin_wyss"
+            app:fontFamily="sans-serif-smallcaps"
             android:textSize="20sp"
             android:gravity="center"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Julien Dodeler"
-            android:textSize="20sp"
-            android:fontFamily="sans-serif-smallcaps"
-            android:gravity="center"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Steven Jambot"
-            android:fontFamily="sans-serif-smallcaps"
+            android:text="@string/tobias"
+            app:fontFamily="sans-serif-smallcaps"
             android:textSize="20sp"
             android:gravity="center"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="Yves Brette"
+            android:text="@string/julien_dodeler"
+            android:textSize="20sp"
+            app:fontFamily="sans-serif-smallcaps"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/steven_jambot"
+            app:fontFamily="sans-serif-smallcaps"
             android:textSize="20sp"
             android:gravity="center"/>
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="Valère Brablé"
+            app:fontFamily="sans-serif-smallcaps"
+            android:text="@string/yves_brette"
             android:textSize="20sp"
             android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:fontFamily="sans-serif-smallcaps"
+            android:text="@string/valere_brable"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"/>
 
     </LinearLayout>
 
