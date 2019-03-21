@@ -67,7 +67,7 @@ public class Sommaire extends AppCompatActivity {
             }
         });
 
-        if(comp1 == true) {
+        if(comp1) {
             bouton2.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
 
@@ -78,7 +78,7 @@ public class Sommaire extends AppCompatActivity {
             });
         }
 
-        if(comp2==true) {
+        if(comp2) {
             bouton3.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
 
@@ -89,55 +89,55 @@ public class Sommaire extends AppCompatActivity {
             });
         }
 
-        if(comp3==true) {
+        if(comp3) {
             bouton4.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
 
-                    Intent intent2 = new Intent(Sommaire.this, B14.class);
+                    Intent intent2 = new Intent(Sommaire.this, Politic4.class);
                     startActivity(intent2);
                     finish();
                 }
             });
         }
 
-        if(comp4==true) {
+        if(comp4) {
             bouton5.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
 
-                    Intent intent2 = new Intent(Sommaire.this, B15.class);
+                    Intent intent2 = new Intent(Sommaire.this, Politic5.class);
                     startActivity(intent2);
                     finish();
                 }
             });
         }
 
-        if(comp5==true) {
+        if(comp5) {
             bouton6.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
 
-                    Intent intent2 = new Intent(Sommaire.this, B16.class);
+                    Intent intent2 = new Intent(Sommaire.this, Politic6.class);
                     startActivity(intent2);
                     finish();
                 }
             });
         }
 
-        if(comp6==true) {
+        if(comp6) {
             bouton7.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
 
-                    Intent intent2 = new Intent(Sommaire.this, B17.class);
+                    Intent intent2 = new Intent(Sommaire.this, Politic7.class);
                     startActivity(intent2);
                     finish();
                 }
             });
         }
 
-        if(comp7==true) {
+        if(comp7) {
             bouton8.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
 
-                    Intent intent2 = new Intent(Sommaire.this, B18.class);
+                    Intent intent2 = new Intent(Sommaire.this, Politic8.class);
                     startActivity(intent2);
                     finish();
                 }

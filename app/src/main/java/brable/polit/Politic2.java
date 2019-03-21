@@ -24,7 +24,6 @@ public class Politic2 extends AppCompatActivity {
     MediaPlayer applause;
     MediaPlayer end;
     MediaPlayer police;
-    private static final String TAG = "MainActivity";
     public static final String PREFS2 = "comp2";
     public static SharedPreferences pref2;
 

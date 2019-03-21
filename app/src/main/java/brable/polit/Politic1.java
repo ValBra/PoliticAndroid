@@ -27,7 +27,6 @@ public class Politic1 extends AppCompatActivity {
 
     public static final String PREFS = "comp1";
     public static SharedPreferences pref1;
-    private static final String TAG = "MainActivity";
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

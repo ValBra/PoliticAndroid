@@ -24,7 +24,6 @@ public class Politic3 extends AppCompatActivity {
     MediaPlayer table;
     MediaPlayer boom;
     MediaPlayer end;
-    private static final String TAG = "MainActivity";
     public static final String PREFS3 = "comp3";
     public static SharedPreferences pref3;
 
@@ -563,7 +562,6 @@ public class Politic3 extends AppCompatActivity {
 
     public void initializeFail() {
         setContentView(R.layout.fail_layout);
-
         pol3.stop();
         end.start();
 
