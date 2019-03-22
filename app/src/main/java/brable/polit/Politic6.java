@@ -22,6 +22,18 @@ public class Politic6 extends AppCompatActivity {
     public static final String PREFS6 = "comp6";
     public static SharedPreferences pref6;
 
+    public void fail53() {
+        //initializeFail();
+        //imageFail.setImageResource(R.drawable.explo2);
+        //textFail.setText(R.string.autodestruction_vaisseau);
+    }
+
+    public void fail55() {
+        /*initializeFail();
+        imageFail.setImageResource(R.drawable.jupiter);
+        textFail.setText(R.string.fail_jupiter);*/
+    }
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
@@ -61,7 +73,7 @@ public class Politic6 extends AppCompatActivity {
                 bouton.start();
                 pol6.stop();
                 end.start();
-                setContentView(R.layout.fail55);
+                //setContentView(R.layout.fail55);
 
                 Button bouton1 = (Button) findViewById(R.id.button1);
                 Button bouton2 = (Button) findViewById(R.id.button2);
@@ -332,7 +344,7 @@ public class Politic6 extends AppCompatActivity {
                 bouton.start();
                 pol6.stop();
                 end.start();
-                setContentView(R.layout.fail53);
+                //setContentView(R.layout.fail53);
 
                 Button bouton1 = (Button) findViewById(R.id.button1);
                 Button bouton2 = (Button) findViewById(R.id.button2);

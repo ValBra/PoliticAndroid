@@ -238,6 +238,33 @@
     <string name="s_inviter_chez_poutine">Je m\'invite chez Jean-Vladimir. J\'ai toujours rêvé de visiter la Russie</string>
     <string name="mitraillette">En montrant votre hélico de combat à Jean-Vladimir, vous déclenchez malencontreusement la mitraillette. Jean-Vladimir meurt, vous prenez le contrôle de la Russie</string>
     <string name="maitre_du_monde">Félicitations, vous êtes le maître du monde !</string>
+    <string name="maintenant_que_maitre_du_monde">Maintenant que vous êtes le maître du monde, que faites-vous?</string>
+    <string name="eliminer_opposants_politiques">Eliminer les opposants politiques</string>
+    <string name="partir_espace">Partir à la conquête de l\'espace</string>
+    <string name="vaisseau_foireux">Vous avez construit un vaisseau spatial dans votre jardin. Après plusieurs mois, vous essayez toujours de le faire démarrer</string>
+    <string name="prise_de_conscience">Après quelques années au pouvoir, qui ont notamment vu le retour au noir et blanc, vous faites un point sur votre vie et prenez conscience du monstre que vous êtes. Vous vous suicidez le lendemain</string>
+    <string name="no_money">Vous n\'avez pas assez d\'argent</string>
+    <string name="paranoia">Vous prenez peur, vous sombrez dans la paranoïa, et vous finissez vos jours dans un hôpital psychiatrique</string>
+    <string name="autodestruction_vaisseau">Vous vous trompez de bouton et vous enclenchez la séquence d\'auto-destruction du vaisseau</string>
+    <string name="represailles">L\'afflux des touristes américains est mal vécu par les martiens, qui décident d\'envahir la Terre et d\'exterminer l\'humanité en représailles</string>
+    <string name="fail_jupiter">Jupiter est une planète gazeuse, vous ne pouvez pas faire atterir votre vaisseau, qui est emporté par un ouragan</string>
+    <string name="tranquille">Maintenant que vous êtes tranquille, que faites-vous?</string>
+    <string name="devenir_dictateur">Devenir officiellement dictateur</string>
+    <string name="reprendre_etudes">Reprendre mes études</string>
+    <string name="doctorat">Vous obtenez un doctorat en ingénierie quantique</string>
+    <string name="lancer_programme_spatial">Lancer un programme spatial</string>
+    <string name="partir_vacances">Partir en vacances</string>
+    <string name="danse_club">Vous dansez tellement bien la danse du club que vous avez un succès mondial et vous devenez riche</string>
+    <string name="augmenter_impots">Augmenter les impôts</string>
+    <string name="plusieurs_milliards">Cette politique vous rapporte plusieurs milliards</string>
+    <string name="acheter_apple">Acheter Apple</string>
+    <string name="bon_invest">Bon investissement, vos finances augmentent encore</string>
+    <string name="regarder_mars_attack">Regarder Mars Attack</string>
+    <string name="vous_lancez_prog_spatial">Vous lancez un programme spatial</string>
+    <string name="arrivee_mars">Vous arrivez sur Mars et vous retrouvez face à des martiens</string>
+    <string name="ouvrir_canal_diplomatique">Ouvrir un canal diplomatique</string>
+    <string name="envahir_mars">Envahir la planète</string>
+    <string name="eliminer_martiens">Vous éliminez les martiens pour vous autoproclamer maître du Système Solaire. Félicitations !</string>
 
 
 
