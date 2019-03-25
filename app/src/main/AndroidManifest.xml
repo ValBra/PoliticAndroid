@@ -51,13 +51,7 @@
             android:name=".Politic5"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".B16"
-            android:screenOrientation="portrait"/>
-        <activity
             android:name=".Politic6"
-            android:screenOrientation="portrait"/>
-        <activity
-            android:name=".B17"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".Politic7"

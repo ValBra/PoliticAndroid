@@ -23,7 +23,6 @@ public class Politic5 extends AppCompatActivity {
     MediaPlayer pol5;
     MediaPlayer end;
     MediaPlayer applause;
-    private static final String TAG = "MainActivity";
     public static final String PREFS5 = "comp5";
     public static SharedPreferences pref5;
 

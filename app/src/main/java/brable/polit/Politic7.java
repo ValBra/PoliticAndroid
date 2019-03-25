@@ -7,26 +7,146 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.ViewFlipper;
 /**
  * Created by BRABLE on 21/04/2017.
  */
 
 public class Politic7 extends AppCompatActivity {
+    ImageView image, imageFail;
+    TextView textTitle,text, textFail;
+    Button button1,button2,button3, buttonRejouer,buttonMenu;
     MediaPlayer bouton;
     MediaPlayer pol7;
     MediaPlayer applause;
     MediaPlayer mech;
     MediaPlayer end;
     MediaPlayer suspens;
-    private static final String TAG = "MainActivity";
     public static final String PREFS7 = "comp7";
     public static SharedPreferences pref7;
 
     int indice = 0;
 
     protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+
+        pref7 = getBaseContext().getSharedPreferences(PREFS7,MODE_PRIVATE);
+
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
+        bouton = MediaPlayer.create(this,R.raw.sbouton);
+        applause = MediaPlayer.create(this,R.raw.applause);
+        end = MediaPlayer.create(this,R.raw.endofthegame);
+        mech = MediaPlayer.create(this,R.raw.mechant);
+        suspens = MediaPlayer.create(this,R.raw.suspens);
+        pol7 = MediaPlayer.create(this,R.raw.politic7);
+        pol7.setLooping(true);
+
+        setContentView(R.layout.question_layout);
+        image = (ImageView) findViewById(R.id.image_question);
+        textTitle = (TextView) findViewById(R.id.textTitle);
+        text = (TextView) findViewById(R.id.text_question);
+        button1 = (Button) findViewById(R.id.button1);
+        button2 = (Button) findViewById(R.id.button2);
+        button3 = (Button) findViewById(R.id.button3);
+
+        image.setImageResource(R.drawable.alea);
+        textTitle.setText(R.string.chap7_titre);
+        button1.setText(R.string.continuer);
+        button2.setVisibility(View.GONE);
+        button3.setVisibility(View.GONE);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+                demarrer();
+            }
+        });
+    }
+
+    public void demarrer() {
+        textTitle.setVisibility(View.GONE);
+        image.setImageResource(R.drawable.voielac);
+        text.setText(R.string.maitre_voie_lactee);
+        button1.setText(R.string.casser_voitures);
+        button2.setVisibility(View.VISIBLE);
+        button2.setText(R.string.aller_plus_haut);
+
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+            }
+        });
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+            }
+        });
+    }
+
+    public void initializeFail() {
+        setContentView(R.layout.fail_layout);
+
+        pol7.stop();
+        end.start();
+
+        imageFail = (ImageView) findViewById(R.id.image_fail);
+        textFail = (TextView) findViewById(R.id.text_fail);
+        buttonRejouer = (Button) findViewById(R.id.button_rejouer);
+        buttonMenu = (Button) findViewById(R.id.button_menu);
+
+        buttonRejouer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+                Intent intent = new Intent(Politic7.this, Politic7.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+
+        buttonMenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                bouton.start();
+                Intent intent = new Intent(Politic7.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+        });
+    }
+
+    public void fail62() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.fou);
+        textFail.setText(R.string.asile);
+    }
+
+    public void fail63() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.tombe);
+        textFail.setText(R.string.mort_sans_savoir);
+    }
+
+    public void fail64() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.tombe);
+        textFail.setText(R.string.echec);
+    }
+
+    public void fail65() {
+        initializeFail();
+        imageFail.setImageResource(R.drawable.looser);
+        textFail.setText(R.string.retraite);
+    }
+
+    /*protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         pref7 = getBaseContext().getSharedPreferences(PREFS7,MODE_PRIVATE);
@@ -70,7 +190,7 @@ public class Politic7 extends AppCompatActivity {
                 bouton.start();
                 pol7.stop();
                 end.stop();
-                setContentView(R.layout.fail62);
+                //setContentView(R.layout.fail62);
 
                 Button bouton1 = (Button) findViewById(R.id.button1);
                 Button bouton2 = (Button) findViewById(R.id.button2);
@@ -107,7 +227,7 @@ public class Politic7 extends AppCompatActivity {
                 }else{
                     pol7.stop();
                     end.start();
-                    setContentView(R.layout.fail63);
+                    //setContentView(R.layout.fail63);
 
                     Button bouton1 = (Button) findViewById(R.id.button1);
                     Button bouton2 = (Button) findViewById(R.id.button2);
@@ -138,7 +258,7 @@ public class Politic7 extends AppCompatActivity {
                 }else{
                     pol7.stop();
                     end.start();
-                    setContentView(R.layout.fail63);
+                    //setContentView(R.layout.fail63);
 
                     Button bouton1 = (Button) findViewById(R.id.button1);
                     Button bouton2 = (Button) findViewById(R.id.button2);
@@ -169,7 +289,7 @@ public class Politic7 extends AppCompatActivity {
                 }else{
                     end.start();
                     pol7.stop();
-                    setContentView(R.layout.fail64);
+                    //setContentView(R.layout.fail64);
 
                     Button bouton1 = (Button) findViewById(R.id.button1);
                     Button bouton2 = (Button) findViewById(R.id.button2);
@@ -200,7 +320,7 @@ public class Politic7 extends AppCompatActivity {
                 }else{
                     end.start();
                     pol7.stop();
-                    setContentView(R.layout.fail64);
+                    //setContentView(R.layout.fail64);
 
                     Button bouton1 = (Button) findViewById(R.id.button1);
                     Button bouton2 = (Button) findViewById(R.id.button2);
@@ -231,7 +351,7 @@ public class Politic7 extends AppCompatActivity {
                 }else{
                     end.start();
                     pol7.stop();
-                    setContentView(R.layout.fail63);
+                    //setContentView(R.layout.fail63);
 
                     Button bouton1 = (Button) findViewById(R.id.button1);
                     Button bouton2 = (Button) findViewById(R.id.button2);
@@ -258,7 +378,7 @@ public class Politic7 extends AppCompatActivity {
                 bouton.start();
                 pol7.stop();
                 end.start();
-                setContentView(R.layout.fail63);
+                //setContentView(R.layout.fail63);
 
                 Button bouton1 = (Button) findViewById(R.id.button1);
                 Button bouton2 = (Button) findViewById(R.id.button2);
@@ -284,7 +404,7 @@ public class Politic7 extends AppCompatActivity {
                 bouton.start();
                 pol7.stop();
                 end.start();
-                setContentView(R.layout.fail64);
+                //setContentView(R.layout.fail64);
 
                 Button bouton1 = (Button) findViewById(R.id.button1);
                 Button bouton2 = (Button) findViewById(R.id.button2);
@@ -345,7 +465,7 @@ public class Politic7 extends AppCompatActivity {
                         viewFlipper.showNext();
                     } else {
                         end.start();
-                        setContentView(R.layout.fail65);
+                        //setContentView(R.layout.fail65);
 
                         Button bouton1 = (Button) findViewById(R.id.button1);
                         Button bouton2 = (Button) findViewById(R.id.button2);
@@ -370,7 +490,7 @@ public class Politic7 extends AppCompatActivity {
                         viewFlipper.showNext();
                     } else {
                         end.start();
-                        setContentView(R.layout.fail65);
+                        //setContentView(R.layout.fail65);
 
                         Button bouton1 = (Button) findViewById(R.id.button1);
                         Button bouton2 = (Button) findViewById(R.id.button2);
@@ -442,7 +562,7 @@ public class Politic7 extends AppCompatActivity {
                 finish();
             }
         });
-    }
+    }*/
     protected void onPause(){
         super.onPause();
         pol7.stop();

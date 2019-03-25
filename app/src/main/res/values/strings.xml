@@ -265,7 +265,42 @@
     <string name="ouvrir_canal_diplomatique">Ouvrir un canal diplomatique</string>
     <string name="envahir_mars">Envahir la planète</string>
     <string name="eliminer_martiens">Vous éliminez les martiens pour vous autoproclamer maître du Système Solaire. Félicitations !</string>
-
+    <string name="maitre_systeme_solaire">Maintenant que vous êtes le maître du système solaire, que faites-vous?</string>
+    <string name="jupiter">Coloniser Jupiter</string>
+    <string name="pluton">Coloniser Pluton</string>
+    <string name="allumettes">N\'ayant pas les compétences nécessaires, vous provoquez une explosion mortelle en jouant avec des allumettes</string>
+    <string name="personne_sur_pluton">Vous réalisez un peu tard qu\'il n\'y a pas d\'habitants sur Pluton. Puis vous sombrez dans la folie</string>
+    <string name="planete_lama">Vous êtes tué à votre arrivée sur une planète de lamas</string>
+    <string name="malaysia_airlines">Vous avez pris la Malaysia Airlines. Je vous laisse deviner la suite</string>
+    <string name="rescapes_genocide">Des rescapés de vos génocides décident de s\'unir et vous renversent</string>
+    <string name="derive">Vous oubliez de faire le plein de carburant et vous dérivez éternellement dans l\'espace</string>
+    <string name="asile">On vous prend pour un fou. Vous finissez votre vie dans un asile</string>
+    <string name="mort_sans_savoir">Vous êtes mort sans savoir pourquoi</string>
+    <string name="echec">Vous avez échoué</string>
+    <string name="retraite">Vous avez perdu. Fatigué, vous décidez de rentrer sur Terre, où vous coulez une paisible retraite</string>
+    <string name="colonisez_pluton">Vous colonisez Pluton</string>
+    <string name="construire_vaisseau">Construire un vaisseau plus rapide que la lumière</string>
+    <string name="ne_rien_faire">Ne rien faire</string>
+    <string name="quete_spirituelle">Vous entamez une quête spirituelle basée sur la méditation. Vous réalisez vite que c\'est chiant et vous étudiez pour passer le temps</string>
+    <string name="taxer_habitants">Taxer les habitants</string>
+    <string name="caillou">Vous commencez à méchamment vous ennuyer sur votre caillou</string>
+    <string name="conquerir_autres_systemes">Conquérir d\'autres systèmes solaires</string>
+    <string name="militariser_pluton">Militariser Pluton</string>
+    <string name="pluton_army">Vous disposez maintenant d\'une base avancée pour vous aider dans vos futures conquêtes</string>
+    <string name="population_extraterrestres">Vous colonisez de nombreuses planètes habitées et vous ne savez pas quoi faires des populations qui s\'y trouvent</string>
+    <string name="exterminer">Les exterminer</string>
+    <string name="reduire_en_esclavage">Les réduire en esclavage</string>
+    <string name="nouvelles_ressources">Cette main d\'oeuvre vous permet d\'entrer en possession de nouvelles ressources vous permettant d\'améliorer votre technologie</string>
+    <string name="continuer_conquetes">Continuer les conquêtes</string>
+    <string name="s_arreter">S\'arrêter</string>
+    <string name="station_spatiale">Vous vous arrêtez dans une station spatiale pour reprendre du carburant</string>
+    <string name="une_planete_a_conquerir">Il ne vous reste qu\'une planète à conquérir</string>
+    <string name="conquerir_derniere_planete">Conquérir la dernière planète</string>
+    <string name="aller_chercher_renforts">Aller chercher des renforts</string>
+    <string name="pour_impressionner">Pour impressionner les extraterrestres, vous tentez un drift aérien lors de votre atterrissage. Vous loupez votre manoeuvre et vous crashez sur une montagne</string>
+    <string name="maitre_voie_lactee">Félicitations, vous êtes le maître de la Voie Lactée !</string>
+    <string name="casser_voitures">Casser des voitures</string>
+    <string name="aller_plus_haut">Aller plus haut</string>
 
 
 
