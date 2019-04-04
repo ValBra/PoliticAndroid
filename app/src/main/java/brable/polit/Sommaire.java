@@ -76,6 +76,8 @@ public class Sommaire extends AppCompatActivity {
                     finish();
                 }
             });
+        } else {
+            bouton2.setVisibility(View.GONE);
         }
 
         if(comp2) {
@@ -87,6 +89,8 @@ public class Sommaire extends AppCompatActivity {
                     finish();
                 }
             });
+        } else {
+            bouton3.setVisibility(View.GONE);
         }
 
         if(comp3) {
@@ -98,6 +102,8 @@ public class Sommaire extends AppCompatActivity {
                     finish();
                 }
             });
+        } else {
+            bouton4.setVisibility(View.GONE);
         }
 
         if(comp4) {
@@ -109,6 +115,8 @@ public class Sommaire extends AppCompatActivity {
                     finish();
                 }
             });
+        } else {
+            bouton5.setVisibility(View.GONE);
         }
 
         if(comp5) {
@@ -120,6 +128,8 @@ public class Sommaire extends AppCompatActivity {
                     finish();
                 }
             });
+        } else {
+            bouton6.setVisibility(View.GONE);
         }
 
         if(comp6) {
@@ -131,6 +141,8 @@ public class Sommaire extends AppCompatActivity {
                     finish();
                 }
             });
+        } else {
+            bouton7.setVisibility(View.GONE);
         }
 
         if(comp7) {
@@ -142,6 +154,8 @@ public class Sommaire extends AppCompatActivity {
                     finish();
                 }
             });
+        } else {
+            bouton8.setVisibility(View.GONE);
         }
 
     }
